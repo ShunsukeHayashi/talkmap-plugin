@@ -1,0 +1,22 @@
+{
+  "type": "module",
+  "private": true,
+  "version": "0.1.0",
+  "name": "@talkmap/mcp-server",
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "test": "node --import tsx --test src/*.test.ts",
+    "dev": "node --import tsx src/http.ts",
+    "start": "node dist/http.js"
+  },
+  "dependencies": {
+    "@talkmap/schemas": "workspace:*",
+    "@modelcontextprotocol/sdk": "^1.20.2",
+    "@modelcontextprotocol/ext-apps": "^1.0.1",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "tsx": "^4.20.0"
+  }
+}

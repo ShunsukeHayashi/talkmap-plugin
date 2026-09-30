@@ -10,7 +10,15 @@
     "build": "pnpm -r --if-present build",
     "test": "pnpm -r --if-present test",
     "typecheck": "pnpm -r --if-present typecheck",
-    "lint": "pnpm -r --if-present lint",
-    "dev": "pnpm -r --parallel --if-present dev"
-  }
+    "lint": "eslint .",
+    "dev": "pnpm --filter @talkmap/mcp-server dev",
+    "preview:widget": "pnpm --filter @talkmap/widget dev"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.0",
+    "@types/node": "^22.0.0",
+    "eslint": "^9.0.0",
+    "typescript-eslint": "^8.0.0"
+  },
+  "type": "module"
 }
